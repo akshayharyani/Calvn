@@ -16,6 +16,8 @@ window.Vue = require('vue');
  */
 
 Vue.component('botman-tinker', require('./components/BotManTinker.vue'));
+Vue.component('abc', require('./components/PostService.vue'));
+
 
 const app = new Vue({
     el: '#app'

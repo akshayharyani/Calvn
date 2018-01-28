@@ -2,6 +2,7 @@
 use App\Http\Controllers\BotManController;
 use App\Conversations\IntoductionConversation;
 use App\Conversations\ExampleConversation;
+use App\Conversations\VehicleServicedConversation;
 
 $botman = resolve('botman');
 
@@ -11,4 +12,12 @@ $botman->hears('Hi', function ($bot) {
 
 });
 
+$botman->hears('Great', function ($bot) {
+  $bot->startConversation(new VehicleServicedConversation);
+});
+
 $botman->hears('Start conversation', BotManController::class.'@startConversation');
+
+$botman->fallback(function($bot) {
+    $bot->reply('Sorry, I did not understand');
+});

@@ -8,7 +8,7 @@ use BotMan\BotMan\Messages\Conversations\Conversation;
 use App\Car;
 use App\User;
 
-class StorageHelper{
+class BotStorageHelper{
 
   private $bot;
 

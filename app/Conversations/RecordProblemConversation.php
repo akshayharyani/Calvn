@@ -13,7 +13,6 @@ use Carbon\Carbon;
 class RecordProblemConversation extends Conversation
 {
 
-  private $storageHelper;
   private $mins_to_add = 90;
 
   /**
@@ -62,7 +61,8 @@ class RecordProblemConversation extends Conversation
   */
   public function run()
   {
-    $this->storageHelper = new StorageHelper($this->bot);
     $this->askProblemDetails();
   }
+
+
 }

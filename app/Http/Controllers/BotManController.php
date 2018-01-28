@@ -26,6 +26,10 @@ class BotManController extends Controller
         return view('tinker');
     }
 
+    public function postServiceFlow() {
+      return view('post_service_flow');
+    }
+
     /**
      * Loaded through routes/botman.php
      * @param  BotMan $bot

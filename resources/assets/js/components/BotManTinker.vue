@@ -134,7 +134,7 @@
 
                 axios.post(API_ENDPOINT, {
                     driver: 'web',
-                    userId: 9999999,
+                    userId: 1245678,
                     message: messageText
                 }).then(response => {
                     let messages = response.data.messages || [];
