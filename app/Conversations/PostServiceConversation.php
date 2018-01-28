@@ -29,7 +29,10 @@ class PostServiceConversation extends Conversation
         'callback' => function () {
           $this->say('Glad to hear that');
           $this->ask('Please rate us on a scale of 1 to 5. 1 being lowest and 5 being highest', function(Answer $answer) {
-            $this->say('Thanks for the feedback');
+          $int = (int) $answer->getText();
+            if($int >= 1 && $int <= 5){
+              $this->say('Thanks for feedback');
+            }
           });
         }
       ],

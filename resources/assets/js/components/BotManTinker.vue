@@ -4,11 +4,11 @@
 
         <div class="messages">
     			<ul>
-            <li  v-for="message in messages" v-bind:class="['message.isMine' ? 'replies' : 'sent']">
+            <li class="sent"  v-for="message in messages" :class="{'replies': message.isMine}">
                 <img src="/logo.png" />
                 <p class="ChatLog__message">{{ message.text }}</p>
             </li>
-            <li  v-for="message in messages" v-bind:class="['message.isMine' ? 'replies' : 'sent']" >
+            <li class="sent"  v-for="message in messages" :class="{'replies': message.isMine}" >
                 <img src="/logo.png" v-if="message.attachment.url != null" />
                 <p v-if="message.attachment.url != null">{{ message.attachment.url }}</p>
             </li>
