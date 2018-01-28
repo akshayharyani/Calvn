@@ -596,6 +596,7 @@
 #frame .content .messages ul li.replies p {
   background: #f5f5f5;
   float: right;
+  color: #000 !important;
 }
 #frame .content .messages ul li img {
   width: 28px;

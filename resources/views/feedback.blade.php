@@ -1,38 +1,11 @@
-<template>
-    <div>
 
-
-        <div class="messages">
-    			<ul>
-            <li class="sent">
-              <img src="http://emilcarlsson.se/assets/mikeross.png" alt=""/>
-              <p>Hi</p>
-            </li>
-            <li class="sent">
-              <img src="http://emilcarlsson.se/assets/mikeross.png" alt=""/>
-              <p>Your car is ready.</p>
-            </li>
-            <li  v-for="message in messages" v-bind:class="['message.isMine' ? 'replies' : 'sent']">
-                <img src="/logo.png" />
-                <p class="ChatLog__message">{{ message.text }}</p>
-            </li>
-            <li  v-for="message in messages" v-bind:class="['message.isMine' ? 'replies' : 'sent']" >
-                <img src="/logo.png" v-if="message.attachment.url != null" />
-                <p v-if="message.attachment.url != null">{{ message.attachment.url }}</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="message-input">
-    			<div class="wrap">
-          <input type="text" class="ChatInput" @keyup.enter="sendMessage" v-model="newMessage" placeholder="Write your message...">
-    			<i class="fa fa-paperclip attachment" aria-hidden="true"></i>
-    			<button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-    			</div>
-    		</div>
-    </div>
-</template>
-
+<!DOCTYPE html><html class=''>
+<head><script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/emilcarlsson/pen/ZOQZaV?limit=all&page=74&q=contact+" />
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<script src="https://use.typekit.net/hoy3lrg.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
 <style class="cp-pen-styles">body {
 
    overflow:auto;
@@ -724,52 +697,42 @@ display:inline-block;
 border-color:transparent;
 }
 </style>
+</head><body >
+<div id="app">
+<div id="frame">
+	<div id="sidepanel" >
+		<div id="profile">
+			<div class="wrap">
+				<img id="profile-img" src="{!! asset('images/calvn.jpg') !!}" class="online" alt="" />
+				<br>
+				<h1 class="main" style="font-size:3em; text-align:center; color:#27ae60; margin-top:1%;	"> Calvn</h1>
 
-<script>
-    const axios = require('axios');
-    const API_ENDPOINT = '/botman';
 
-    export default {
-        data() {
-            return {
-                messages: [],
-                newMessage: null
-            };
-        },
+			</div>
+		</div>
 
-        methods: {
-            _addMessage(text, attachment, isMine) {
-                this.messages.push({
-                    'isMine': isMine,
-                    'user': isMine ? '👨' : '🤖',
-                    'text': text,
-                    'attachment': attachment || {},
-                });
-            },
+		<div id="bottom-bar">
+				<h5 style=" margin-left:11%; margin-bottom:3%; color:#27ae60; font-size:15px;">Interactive chatbot by Ackrotech.</h5>
 
-            sendMessage() {
-                let messageText = this.newMessage;
-                this.newMessage = '';
-                if (messageText === 'clear') {
-                    this.messages = [];
-                    return;
-                }
+			<button id="addcontact"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> <span>Contact Us.</span></button>
 
-                this._addMessage(messageText, null, true);
+		</div>
+	</div>
+	<div class="content">
+		<div class="contact-profile">
+			<img src="{!! asset('images/calvn.jpg') !!}" alt="" />
+			<p >Calvn</p>
+			<div class="social-media">
+				<i class="fa fa-phone" aria-hidden="true"></i>
 
-                axios.post(API_ENDPOINT, {
-                    driver: 'web',
-                    userId: 1245678,
-                    message: messageText
-                }).then(response => {
-                    let messages = response.data.messages || [];
-                    messages.forEach(msg => {
-                        this._addMessage(msg.text, msg.attachment, false);
-                    });
-                }, response => {
+			</div>
+		</div>
+    <feedback></feedback>
+	</div>
+</div>
+</div>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
-                });
-            }
-        }
-    }
-</script>
+<script src="/js/app.js"></script>
+
+</body></html>

@@ -1,16 +1,10 @@
 <template>
     <div>
-
-
         <div class="messages">
     			<ul>
             <li class="sent">
               <img src="http://emilcarlsson.se/assets/mikeross.png" alt=""/>
               <p>Hi</p>
-            </li>
-            <li class="sent">
-              <img src="http://emilcarlsson.se/assets/mikeross.png" alt=""/>
-              <p>Your car is ready.</p>
             </li>
             <li  v-for="message in messages" v-bind:class="['message.isMine' ? 'replies' : 'sent']">
                 <img src="/logo.png" />

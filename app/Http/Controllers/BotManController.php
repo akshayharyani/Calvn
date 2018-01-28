@@ -30,6 +30,10 @@ class BotManController extends Controller
       return view('post_service_flow');
     }
 
+    public function feedbackFlow() {
+      return view('feedback');
+    }
+
     /**
      * Loaded through routes/botman.php
      * @param  BotMan $bot

@@ -1317,6 +1317,7 @@ window.Vue = __webpack_require__(49);
 
 Vue.component('botman-tinker', __webpack_require__(42));
 Vue.component('abc', __webpack_require__(43));
+Vue.component('feedback', __webpack_require__(61));
 
 var app = new Vue({
   el: '#app'
@@ -2271,6 +2272,623 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var axios = __webpack_require__(2);
 var API_ENDPOINT = '/botman';
@@ -2325,6 +2943,7 @@ var API_ENDPOINT = '/botman';
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -5545,14 +6164,14 @@ if (typeof jQuery === 'undefined') {
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(9)();
-exports.push([module.i, "\ninput.ChatInput {\n    width: 300px;\n    height: 25px;\n    border-radius: 5px;\n    border: none;\n    padding: 10px;\n}\nul.ChatLog {\n    list-style: none;\n}\n.ChatLog {\n    max-width: 20em;\n    margin: 0 auto;\n}\n.ChatLog .ChatLog__entry {\n    margin: .5em;\n}\n.ChatLog__entry {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-align: end;\n        -ms-flex-align: end;\n            align-items: flex-end;\n    max-width: 100%;\n}\n.ChatLog__entry.ChatLog__entry_mine {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n        -ms-flex-direction: row-reverse;\n            flex-direction: row-reverse;\n}\n.ChatLog__avatar {\n    -ms-flex-negative: 0;\n        flex-shrink: 0;\n    -webkit-box-flex: 0;\n        -ms-flex-positive: 0;\n            flex-grow: 0;\n    z-index: 1;\n    height: 50px;\n    width: 50px;\n    border-radius: 25px;\n}\n.ChatLog__entry.ChatLog__entry_mine\n.ChatLog__avatar {\n    display: none;\n}\n.ChatLog__entry .ChatLog__message {\n    position: relative;\n    margin: 0 12px;\n}\n.ChatLog__entry .ChatLog__message::before {\n    position: absolute;\n    right: auto;\n    bottom: .6em;\n    left: -12px;\n    height: 0;\n    content: '';\n    border: 6px solid transparent;\n    border-right-color: #ddd;\n    z-index: 2;\n}\n.ChatLog__entry.ChatLog__entry_mine .ChatLog__message::before {\n    right: -12px;\n    bottom: .6em;\n    left: auto;\n    border: 6px solid transparent;\n    border-left-color: #08f;\n}\n.ChatLog__message {\n    background-color: #ddd;\n    padding: .5em;\n    border-radius: 4px;\n    font-weight: lighter;\n    max-width: 70%;\n}\n.ChatLog__entry.ChatLog__entry_mine .ChatLog__message {\n    border-top: 1px solid #07f;\n    border-bottom: 1px solid #07f;\n    background-color: #08f;\n    color: #fff;\n}\n", ""]);
+exports.push([module.i, "\nbody {\n\n   overflow:auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  min-height: 100vh;\n  background: #27ae60;\n  font-family: \"proxima-nova\", \"Source Sans Pro\", sans-serif;\n  font-size: 1em;\n  letter-spacing: 0.1px;\n  color: #32465a;\n  text-rendering: optimizeLegibility;\n  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);\n  -webkit-font-smoothing: antialiased;\n}\n#frame {\n  width: 95%;\n  min-width: 660px;\n  max-width: 1000px;\n  height: 92vh;\n  min-height: 300px;\n  max-height: 720px;\n  background: #E6EAEA;\n}\n@media screen and (max-width: 360px) {\n#frame {\n    width: 100%;\n    height: 100vh;\n}\n}\n#frame #sidepanel {\n  float: left;\n  min-width: 200px;\n  max-width: 340px;\n  width: 40%;\n  height: 100%;\n  background: #e9ecef;\n  color: #f5f5f5;\n  overflow: hidden;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel {\n    width: 58px;\n    min-width: 58px;\n}\n}\n#frame #sidepanel #profile {\n  width: 72%;\n  margin: 30px auto;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile {\n    width: 100%;\n    margin: 0 auto;\n    padding: 5px 0 0 0;\n    background: #32465a;\n}\n}\n#frame #sidepanel #profile.expanded .wrap {\n  height: 210px;\n  line-height: initial;\n}\n#frame #sidepanel #profile.expanded .wrap p {\n  margin-top: 20px;\n}\n#frame #sidepanel #profile.expanded .wrap i.expand-button {\n  -webkit-transform: scaleY(-1);\n  transform: scaleY(-1);\n  -webkit-filter: FlipH;\n          filter: FlipH;\n  -ms-filter: \"FlipH\";\n}\n#frame #sidepanel #profile .wrap {\n  height: 270px;\n  line-height: 60px;\n  overflow: hidden;\n  transition: 0.3s height ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap {\n    height: 55px;\n}\n}\n#frame #sidepanel #profile .wrap img {\n  width: 140px;\n  border-radius: 50%;\n  padding: 3px;\n  border: 2px solid #e74c3c;\n  height: 200px;\n  float: left;\n  cursor: pointer;\n  transition: 0.3s border ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap img {\n    width: 40px;\n    margin-left: 4px;\n}\n}\n#frame #sidepanel #profile .wrap img.online {\n  border: 0px solid #2ecc71;\n}\n#frame #sidepanel #profile .wrap img.away {\n  border: 2px solid #f1c40f;\n}\n#frame #sidepanel #profile .wrap img.busy {\n  border: 2px solid #e74c3c;\n}\n#frame #sidepanel #profile .wrap img.offline {\n  border: 2px solid #95a5a6;\n}\n#frame #sidepanel #profile .wrap p {\n  float: left;\n  margin-left: 15px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap p {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap i.expand-button {\n  float: right;\n  margin-top: 23px;\n  font-size: 0.8em;\n  cursor: pointer;\n  color: #435f7a;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap i.expand-button {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap #status-options {\n  position: absolute;\n  opacity: 0;\n  visibility: hidden;\n  width: 150px;\n  margin: 70px 0 0 0;\n  border-radius: 6px;\n  z-index: 99;\n  line-height: initial;\n  background: #435f7a;\n  transition: 0.3s all ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options {\n    width: 58px;\n    margin-top: 57px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options.active {\n  opacity: 1;\n  visibility: visible;\n  margin: 75px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options.active {\n    margin-top: 62px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options:before {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-left: 6px solid transparent;\n  border-right: 6px solid transparent;\n  border-bottom: 8px solid #435f7a;\n  margin: -8px 0 0 24px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options:before {\n    margin-left: 23px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul {\n  overflow: hidden;\n  border-radius: 6px;\n}\n#frame #sidepanel #profile .wrap #status-options ul li {\n  padding: 15px 0 30px 18px;\n  display: block;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li {\n    padding: 15px 0 35px 22px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li:hover {\n  background: #496886;\n}\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  margin: 5px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {\n    width: 14px;\n    height: 14px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {\n  content: '';\n  position: absolute;\n  width: 14px;\n  height: 14px;\n  margin: -3px 0 0 -3px;\n  background: transparent;\n  border-radius: 50%;\n  z-index: 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {\n    height: 18px;\n    width: 18px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li p {\n  padding-left: 12px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li p {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-online span.status-circle {\n  background: #2ecc71;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-online.active span.status-circle:before {\n  border: 1px solid #2ecc71;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-away span.status-circle {\n  background: #f1c40f;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-away.active span.status-circle:before {\n  border: 1px solid #f1c40f;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-busy span.status-circle {\n  background: #e74c3c;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-busy.active span.status-circle:before {\n  border: 1px solid #e74c3c;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-offline span.status-circle {\n  background: #95a5a6;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-offline.active span.status-circle:before {\n  border: 1px solid #95a5a6;\n}\n#frame #sidepanel #profile .wrap #expanded {\n  padding: 100px 0 0 0;\n  display: block;\n  line-height: initial !important;\n}\n#frame #sidepanel #profile .wrap #expanded label {\n  float: left;\n  clear: both;\n  margin: 0 8px 5px 0;\n  padding: 5px 0;\n}\n#frame #sidepanel #profile .wrap #expanded input {\n  border: none;\n  margin-bottom: 6px;\n  background: #32465a;\n  border-radius: 3px;\n  color: #f5f5f5;\n  padding: 7px;\n  width: calc(100% - 43px);\n}\n#frame #sidepanel #profile .wrap #expanded input:focus {\n  outline: none;\n  background: #435f7a;\n}\n#frame #sidepanel #search {\n  border-top: 1px solid #32465a;\n  border-bottom: 1px solid #32465a;\n  font-weight: 300;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #search {\n    display: none;\n}\n}\n#frame #sidepanel #search label {\n  position: absolute;\n  margin: 10px 0 0 20px;\n}\n#frame #sidepanel #search input {\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n  padding: 10px 0 10px 46px;\n  width: calc(100% - 25px);\n  border: none;\n  background: #32465a;\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:focus {\n  outline: none;\n  background: #435f7a;\n}\n#frame #sidepanel #search input::-webkit-input-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input::-moz-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:-ms-input-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:-moz-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #contacts {\n  height: calc(100% - 177px);\n  overflow-y: scroll;\n  overflow-x: hidden;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts {\n    height: calc(100% - 149px);\n    overflow-y: scroll;\n    overflow-x: hidden;\n}\n#frame #sidepanel #contacts::-webkit-scrollbar {\n    display: none;\n}\n}\n#frame #sidepanel #contacts.expanded {\n  height: calc(100% - 334px);\n}\n#frame #sidepanel #contacts::-webkit-scrollbar {\n  width: 8px;\n  background: #2c3e50;\n}\n#frame #sidepanel #contacts::-webkit-scrollbar-thumb {\n  background-color: #243140;\n}\n#frame #sidepanel #contacts ul li.contact {\n  position: relative;\n  padding: 10px 0 15px 0;\n  font-size: 0.9em;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact {\n    padding: 6px 0 46px 8px;\n}\n}\n#frame #sidepanel #contacts ul li.contact:hover {\n  background: #32465a;\n}\n#frame #sidepanel #contacts ul li.contact.active {\n  background: #32465a;\n  border-right: 5px solid #435f7a;\n}\n#frame #sidepanel #contacts ul li.contact.active span.contact-status {\n  border: 2px solid #32465a !important;\n}\n#frame #sidepanel #contacts ul li.contact .wrap {\n  width: 88%;\n  margin: 0 auto;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap {\n    width: 100%;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap span {\n  position: absolute;\n  left: 0;\n  margin: -2px 0 0 -2px;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border: 2px solid #2c3e50;\n  background: #95a5a6;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.online {\n  background: #2ecc71;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.away {\n  background: #f1c40f;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.busy {\n  background: #e74c3c;\n}\n#frame #sidepanel #contacts ul li.contact .wrap img {\n  width: 40px;\n  border-radius: 50%;\n  float: left;\n  margin-right: 10px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap img {\n    margin-right: 0px;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta {\n  padding: 5px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap .meta {\n    display: none;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .name {\n  font-weight: 600;\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .preview {\n  margin: 5px 0 0 0;\n  padding: 0 0 1px;\n  font-weight: 400;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: 1s all ease;\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .preview span {\n  position: initial;\n  border-radius: initial;\n  background: none;\n  border: none;\n  padding: 0 2px 0 0;\n  margin: 0 0 0 1px;\n  opacity: .5;\n}\n#frame #sidepanel #bottom-bar {\n  position: absolute;\n  width: 100%;\n  bottom: 0;\n}\n#frame #sidepanel #bottom-bar button {\n  float: left;\n  border: none;\n  width: 100%;\n  padding: 10px 0;\n  background: #32465a;\n  color: #f5f5f5;\n  cursor: pointer;\n  font-size: 0.85em;\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button {\n    float: none;\n    width: 100%;\n    padding: 15px 0;\n}\n}\n#frame #sidepanel #bottom-bar button:focus {\n  outline: none;\n}\n#frame #sidepanel #bottom-bar button:nth-child(1) {\n  border-right: 1px solid #2c3e50;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button:nth-child(1) {\n    border-right: none;\n    border-bottom: 1px solid #2c3e50;\n}\n}\n#frame #sidepanel #bottom-bar button:hover {\n  background: #435f7a;\n}\n#frame #sidepanel #bottom-bar button i {\n  margin-right: 3px;\n  font-size: 1em;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button i {\n    font-size: 1.3em;\n}\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button span {\n    display: none;\n}\n}\n#frame .content {\n  float: right;\n  width: 60%;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame .content {\n    width: calc(100% - 58px);\n    min-width: 300px !important;\n}\n}\n@media screen and (min-width: 900px) {\n#frame .content {\n    width: calc(100% - 264px);\n}\n}\n#frame .content .contact-profile {\n  width: 100%;\n  height: 60px;\n  line-height: 60px;\n  background: #f5f5f5;\n}\n#frame .content .contact-profile img {\n  width: 55px;\n  border-radius: 50%;\n  float: left;\n  margin: 9px 12px 0 9px;\n}\n#frame .content .contact-profile p {\n  float: left;\n}\n#frame .content .contact-profile .social-media {\n  float: right;\n}\n#frame .content .contact-profile .social-media i {\n  margin-left: 14px;\n  cursor: pointer;\n}\n#frame .content .contact-profile .social-media i:nth-last-child(1) {\n  margin-right: 20px;\n}\n#frame .content .contact-profile .social-media i:hover {\n  color: #435f7a;\n}\n#frame .content .messages {\n  height: auto;\n  min-height: calc(100% - 93px);\n  max-height: calc(100% - 93px);\n  overflow-y: scroll;\n  overflow-x: hidden;\n  position: absolute;\n  width: 400px;\n}\n@media screen and (max-width: 735px) {\n#frame .content .messages {\n    max-height: calc(100% - 105px);\n}\n}\n#frame .content .messages::-webkit-scrollbar {\n  width: 8px;\n  background: transparent;\n}\n#frame .content .messages::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.3);\n}\n#frame .content .messages ul li {\n  display: inline-block;\n  clear: both;\n  float: left;\n  margin: 15px 15px 5px 15px;\n  width: calc(100% - 25px);\n  font-size: 0.9em;\n}\n#frame .content .messages ul li:nth-last-child(1) {\n  margin-bottom: 20px;\n}\n#frame .content .messages ul li.sent img {\n  margin: 6px 8px 0 0;\n}\n#frame .content .messages ul li.sent p {\n  background: #435f7a;\n  color: #f5f5f5;\n}\n#frame .content .messages ul li.replies img {\n  float: right;\n  margin: 6px 0 0 8px;\n}\n#frame .content .messages ul li.replies p {\n  background: #f5f5f5;\n  float: right;\n  color: #000 !important;\n}\n#frame .content .messages ul li img {\n  width: 28px;\n  border-radius: 50%;\n  float: left;\n}\n#frame .content .messages ul li p {\n  display: inline-block;\n  padding: 10px 15px;\n  border-radius: 20px;\n  max-width: 205px;\n  line-height: 130%;\n}\n@media screen and (min-width: 735px) {\n#frame .content .messages ul li p {\n    max-width: 300px;\n}\n}\n#frame .content .message-input {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  z-index: 99;\n}\n#frame .content .message-input .wrap {\n  position: relative;\n}\n#frame .content .message-input .wrap input {\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n  float: left;\n  border: none;\n  width: calc(100% - 90px);\n  padding: 11px 32px 10px 8px;\n  font-size: 0.8em;\n  color: #32465a;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap input {\n    padding: 15px 32px 16px 8px;\n}\n}\n#frame .content .message-input .wrap input:focus {\n  outline: none;\n}\n#frame .content .message-input .wrap .attachment {\n  position: absolute;\n  right: 60px;\n  z-index: 4;\n  margin-top: 10px;\n  font-size: 1.1em;\n  color: #435f7a;\n  opacity: .5;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap .attachment {\n    margin-top: 17px;\n    right: 65px;\n}\n}\n#frame .content .message-input .wrap .attachment:hover {\n  opacity: 1;\n}\n#frame .content .message-input .wrap button {\n  float: right;\n  border: none;\n  width: 50px;\n  padding: 12px 0;\n  cursor: pointer;\n  background: #32465a;\n  color: #f5f5f5;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap button {\n    padding: 16px 0;\n}\n}\n#frame .content .message-input .wrap button:hover {\n  background: #435f7a;\n}\n#frame .content .message-input .wrap button:focus {\n  outline: none;\n}\n.main{\nfont-family: 'Roboto Slab', serif;\n}\n.userimg{\nbackground-color:#2ecc71;\nborder: 2px solid;\nborder-radius:100%;\nheight:28px;\nwidth:28px;\nmargin: 6px 8px 0 0;\ndisplay:inline-block;\nborder-color:transparent;\n}\n", ""]);
 
 /***/ }),
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(9)();
-exports.push([module.i, "\nbody {\n\n   overflow:auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  min-height: 100vh;\n  background: #27ae60;\n  font-family: \"proxima-nova\", \"Source Sans Pro\", sans-serif;\n  font-size: 1em;\n  letter-spacing: 0.1px;\n  color: #32465a;\n  text-rendering: optimizeLegibility;\n  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);\n  -webkit-font-smoothing: antialiased;\n}\n#frame {\n  width: 95%;\n  min-width: 660px;\n  max-width: 1000px;\n  height: 92vh;\n  min-height: 300px;\n  max-height: 720px;\n  background: #E6EAEA;\n}\n@media screen and (max-width: 360px) {\n#frame {\n    width: 100%;\n    height: 100vh;\n}\n}\n#frame #sidepanel {\n  float: left;\n  min-width: 200px;\n  max-width: 340px;\n  width: 40%;\n  height: 100%;\n  background: #e9ecef;\n  color: #f5f5f5;\n  overflow: hidden;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel {\n    width: 58px;\n    min-width: 58px;\n}\n}\n#frame #sidepanel #profile {\n  width: 72%;\n  margin: 30px auto;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile {\n    width: 100%;\n    margin: 0 auto;\n    padding: 5px 0 0 0;\n    background: #32465a;\n}\n}\n#frame #sidepanel #profile.expanded .wrap {\n  height: 210px;\n  line-height: initial;\n}\n#frame #sidepanel #profile.expanded .wrap p {\n  margin-top: 20px;\n}\n#frame #sidepanel #profile.expanded .wrap i.expand-button {\n  -webkit-transform: scaleY(-1);\n  transform: scaleY(-1);\n  -webkit-filter: FlipH;\n          filter: FlipH;\n  -ms-filter: \"FlipH\";\n}\n#frame #sidepanel #profile .wrap {\n  height: 270px;\n  line-height: 60px;\n  overflow: hidden;\n  transition: 0.3s height ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap {\n    height: 55px;\n}\n}\n#frame #sidepanel #profile .wrap img {\n  width: 140px;\n  border-radius: 50%;\n  padding: 3px;\n  border: 2px solid #e74c3c;\n  height: 200px;\n  float: left;\n  cursor: pointer;\n  transition: 0.3s border ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap img {\n    width: 40px;\n    margin-left: 4px;\n}\n}\n#frame #sidepanel #profile .wrap img.online {\n  border: 0px solid #2ecc71;\n}\n#frame #sidepanel #profile .wrap img.away {\n  border: 2px solid #f1c40f;\n}\n#frame #sidepanel #profile .wrap img.busy {\n  border: 2px solid #e74c3c;\n}\n#frame #sidepanel #profile .wrap img.offline {\n  border: 2px solid #95a5a6;\n}\n#frame #sidepanel #profile .wrap p {\n  float: left;\n  margin-left: 15px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap p {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap i.expand-button {\n  float: right;\n  margin-top: 23px;\n  font-size: 0.8em;\n  cursor: pointer;\n  color: #435f7a;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap i.expand-button {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap #status-options {\n  position: absolute;\n  opacity: 0;\n  visibility: hidden;\n  width: 150px;\n  margin: 70px 0 0 0;\n  border-radius: 6px;\n  z-index: 99;\n  line-height: initial;\n  background: #435f7a;\n  transition: 0.3s all ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options {\n    width: 58px;\n    margin-top: 57px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options.active {\n  opacity: 1;\n  visibility: visible;\n  margin: 75px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options.active {\n    margin-top: 62px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options:before {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-left: 6px solid transparent;\n  border-right: 6px solid transparent;\n  border-bottom: 8px solid #435f7a;\n  margin: -8px 0 0 24px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options:before {\n    margin-left: 23px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul {\n  overflow: hidden;\n  border-radius: 6px;\n}\n#frame #sidepanel #profile .wrap #status-options ul li {\n  padding: 15px 0 30px 18px;\n  display: block;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li {\n    padding: 15px 0 35px 22px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li:hover {\n  background: #496886;\n}\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  margin: 5px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {\n    width: 14px;\n    height: 14px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {\n  content: '';\n  position: absolute;\n  width: 14px;\n  height: 14px;\n  margin: -3px 0 0 -3px;\n  background: transparent;\n  border-radius: 50%;\n  z-index: 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {\n    height: 18px;\n    width: 18px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li p {\n  padding-left: 12px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li p {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-online span.status-circle {\n  background: #2ecc71;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-online.active span.status-circle:before {\n  border: 1px solid #2ecc71;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-away span.status-circle {\n  background: #f1c40f;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-away.active span.status-circle:before {\n  border: 1px solid #f1c40f;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-busy span.status-circle {\n  background: #e74c3c;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-busy.active span.status-circle:before {\n  border: 1px solid #e74c3c;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-offline span.status-circle {\n  background: #95a5a6;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-offline.active span.status-circle:before {\n  border: 1px solid #95a5a6;\n}\n#frame #sidepanel #profile .wrap #expanded {\n  padding: 100px 0 0 0;\n  display: block;\n  line-height: initial !important;\n}\n#frame #sidepanel #profile .wrap #expanded label {\n  float: left;\n  clear: both;\n  margin: 0 8px 5px 0;\n  padding: 5px 0;\n}\n#frame #sidepanel #profile .wrap #expanded input {\n  border: none;\n  margin-bottom: 6px;\n  background: #32465a;\n  border-radius: 3px;\n  color: #f5f5f5;\n  padding: 7px;\n  width: calc(100% - 43px);\n}\n#frame #sidepanel #profile .wrap #expanded input:focus {\n  outline: none;\n  background: #435f7a;\n}\n#frame #sidepanel #search {\n  border-top: 1px solid #32465a;\n  border-bottom: 1px solid #32465a;\n  font-weight: 300;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #search {\n    display: none;\n}\n}\n#frame #sidepanel #search label {\n  position: absolute;\n  margin: 10px 0 0 20px;\n}\n#frame #sidepanel #search input {\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n  padding: 10px 0 10px 46px;\n  width: calc(100% - 25px);\n  border: none;\n  background: #32465a;\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:focus {\n  outline: none;\n  background: #435f7a;\n}\n#frame #sidepanel #search input::-webkit-input-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input::-moz-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:-ms-input-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:-moz-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #contacts {\n  height: calc(100% - 177px);\n  overflow-y: scroll;\n  overflow-x: hidden;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts {\n    height: calc(100% - 149px);\n    overflow-y: scroll;\n    overflow-x: hidden;\n}\n#frame #sidepanel #contacts::-webkit-scrollbar {\n    display: none;\n}\n}\n#frame #sidepanel #contacts.expanded {\n  height: calc(100% - 334px);\n}\n#frame #sidepanel #contacts::-webkit-scrollbar {\n  width: 8px;\n  background: #2c3e50;\n}\n#frame #sidepanel #contacts::-webkit-scrollbar-thumb {\n  background-color: #243140;\n}\n#frame #sidepanel #contacts ul li.contact {\n  position: relative;\n  padding: 10px 0 15px 0;\n  font-size: 0.9em;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact {\n    padding: 6px 0 46px 8px;\n}\n}\n#frame #sidepanel #contacts ul li.contact:hover {\n  background: #32465a;\n}\n#frame #sidepanel #contacts ul li.contact.active {\n  background: #32465a;\n  border-right: 5px solid #435f7a;\n}\n#frame #sidepanel #contacts ul li.contact.active span.contact-status {\n  border: 2px solid #32465a !important;\n}\n#frame #sidepanel #contacts ul li.contact .wrap {\n  width: 88%;\n  margin: 0 auto;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap {\n    width: 100%;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap span {\n  position: absolute;\n  left: 0;\n  margin: -2px 0 0 -2px;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border: 2px solid #2c3e50;\n  background: #95a5a6;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.online {\n  background: #2ecc71;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.away {\n  background: #f1c40f;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.busy {\n  background: #e74c3c;\n}\n#frame #sidepanel #contacts ul li.contact .wrap img {\n  width: 40px;\n  border-radius: 50%;\n  float: left;\n  margin-right: 10px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap img {\n    margin-right: 0px;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta {\n  padding: 5px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap .meta {\n    display: none;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .name {\n  font-weight: 600;\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .preview {\n  margin: 5px 0 0 0;\n  padding: 0 0 1px;\n  font-weight: 400;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: 1s all ease;\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .preview span {\n  position: initial;\n  border-radius: initial;\n  background: none;\n  border: none;\n  padding: 0 2px 0 0;\n  margin: 0 0 0 1px;\n  opacity: .5;\n}\n#frame #sidepanel #bottom-bar {\n  position: absolute;\n  width: 100%;\n  bottom: 0;\n}\n#frame #sidepanel #bottom-bar button {\n  float: left;\n  border: none;\n  width: 100%;\n  padding: 10px 0;\n  background: #32465a;\n  color: #f5f5f5;\n  cursor: pointer;\n  font-size: 0.85em;\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button {\n    float: none;\n    width: 100%;\n    padding: 15px 0;\n}\n}\n#frame #sidepanel #bottom-bar button:focus {\n  outline: none;\n}\n#frame #sidepanel #bottom-bar button:nth-child(1) {\n  border-right: 1px solid #2c3e50;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button:nth-child(1) {\n    border-right: none;\n    border-bottom: 1px solid #2c3e50;\n}\n}\n#frame #sidepanel #bottom-bar button:hover {\n  background: #435f7a;\n}\n#frame #sidepanel #bottom-bar button i {\n  margin-right: 3px;\n  font-size: 1em;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button i {\n    font-size: 1.3em;\n}\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button span {\n    display: none;\n}\n}\n#frame .content {\n  float: right;\n  width: 60%;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame .content {\n    width: calc(100% - 58px);\n    min-width: 300px !important;\n}\n}\n@media screen and (min-width: 900px) {\n#frame .content {\n    width: calc(100% - 264px);\n}\n}\n#frame .content .contact-profile {\n  width: 100%;\n  height: 60px;\n  line-height: 60px;\n  background: #f5f5f5;\n}\n#frame .content .contact-profile img {\n  width: 55px;\n  border-radius: 50%;\n  float: left;\n  margin: 9px 12px 0 9px;\n}\n#frame .content .contact-profile p {\n  float: left;\n}\n#frame .content .contact-profile .social-media {\n  float: right;\n}\n#frame .content .contact-profile .social-media i {\n  margin-left: 14px;\n  cursor: pointer;\n}\n#frame .content .contact-profile .social-media i:nth-last-child(1) {\n  margin-right: 20px;\n}\n#frame .content .contact-profile .social-media i:hover {\n  color: #435f7a;\n}\n#frame .content .messages {\n  height: auto;\n  min-height: calc(100% - 93px);\n  max-height: calc(100% - 93px);\n  overflow-y: scroll;\n  overflow-x: hidden;\n  position: absolute;\n  width: 400px;\n}\n@media screen and (max-width: 735px) {\n#frame .content .messages {\n    max-height: calc(100% - 105px);\n}\n}\n#frame .content .messages::-webkit-scrollbar {\n  width: 8px;\n  background: transparent;\n}\n#frame .content .messages::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.3);\n}\n#frame .content .messages ul li {\n  display: inline-block;\n  clear: both;\n  float: left;\n  margin: 15px 15px 5px 15px;\n  width: calc(100% - 25px);\n  font-size: 0.9em;\n}\n#frame .content .messages ul li:nth-last-child(1) {\n  margin-bottom: 20px;\n}\n#frame .content .messages ul li.sent img {\n  margin: 6px 8px 0 0;\n}\n#frame .content .messages ul li.sent p {\n  background: #435f7a;\n  color: #f5f5f5;\n}\n#frame .content .messages ul li.replies img {\n  float: right;\n  margin: 6px 0 0 8px;\n}\n#frame .content .messages ul li.replies p {\n  background: #f5f5f5;\n  float: right;\n}\n#frame .content .messages ul li img {\n  width: 28px;\n  border-radius: 50%;\n  float: left;\n}\n#frame .content .messages ul li p {\n  display: inline-block;\n  padding: 10px 15px;\n  border-radius: 20px;\n  max-width: 205px;\n  line-height: 130%;\n}\n@media screen and (min-width: 735px) {\n#frame .content .messages ul li p {\n    max-width: 300px;\n}\n}\n#frame .content .message-input {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  z-index: 99;\n}\n#frame .content .message-input .wrap {\n  position: relative;\n}\n#frame .content .message-input .wrap input {\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n  float: left;\n  border: none;\n  width: calc(100% - 90px);\n  padding: 11px 32px 10px 8px;\n  font-size: 0.8em;\n  color: #32465a;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap input {\n    padding: 15px 32px 16px 8px;\n}\n}\n#frame .content .message-input .wrap input:focus {\n  outline: none;\n}\n#frame .content .message-input .wrap .attachment {\n  position: absolute;\n  right: 60px;\n  z-index: 4;\n  margin-top: 10px;\n  font-size: 1.1em;\n  color: #435f7a;\n  opacity: .5;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap .attachment {\n    margin-top: 17px;\n    right: 65px;\n}\n}\n#frame .content .message-input .wrap .attachment:hover {\n  opacity: 1;\n}\n#frame .content .message-input .wrap button {\n  float: right;\n  border: none;\n  width: 50px;\n  padding: 12px 0;\n  cursor: pointer;\n  background: #32465a;\n  color: #f5f5f5;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap button {\n    padding: 16px 0;\n}\n}\n#frame .content .message-input .wrap button:hover {\n  background: #435f7a;\n}\n#frame .content .message-input .wrap button:focus {\n  outline: none;\n}\n.main{\nfont-family: 'Roboto Slab', serif;\n}\n.userimg{\nbackground-color:#2ecc71;\nborder: 2px solid;\nborder-radius:100%;\nheight:28px;\nwidth:28px;\nmargin: 6px 8px 0 0;\ndisplay:inline-block;\nborder-color:transparent;\n}\n", ""]);
+exports.push([module.i, "\nbody {\n\n   overflow:auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  min-height: 100vh;\n  background: #27ae60;\n  font-family: \"proxima-nova\", \"Source Sans Pro\", sans-serif;\n  font-size: 1em;\n  letter-spacing: 0.1px;\n  color: #32465a;\n  text-rendering: optimizeLegibility;\n  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);\n  -webkit-font-smoothing: antialiased;\n}\n#frame {\n  width: 95%;\n  min-width: 660px;\n  max-width: 1000px;\n  height: 92vh;\n  min-height: 300px;\n  max-height: 720px;\n  background: #E6EAEA;\n}\n@media screen and (max-width: 360px) {\n#frame {\n    width: 100%;\n    height: 100vh;\n}\n}\n#frame #sidepanel {\n  float: left;\n  min-width: 200px;\n  max-width: 340px;\n  width: 40%;\n  height: 100%;\n  background: #e9ecef;\n  color: #f5f5f5;\n  overflow: hidden;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel {\n    width: 58px;\n    min-width: 58px;\n}\n}\n#frame #sidepanel #profile {\n  width: 72%;\n  margin: 30px auto;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile {\n    width: 100%;\n    margin: 0 auto;\n    padding: 5px 0 0 0;\n    background: #32465a;\n}\n}\n#frame #sidepanel #profile.expanded .wrap {\n  height: 210px;\n  line-height: initial;\n}\n#frame #sidepanel #profile.expanded .wrap p {\n  margin-top: 20px;\n}\n#frame #sidepanel #profile.expanded .wrap i.expand-button {\n  -webkit-transform: scaleY(-1);\n  transform: scaleY(-1);\n  -webkit-filter: FlipH;\n          filter: FlipH;\n  -ms-filter: \"FlipH\";\n}\n#frame #sidepanel #profile .wrap {\n  height: 270px;\n  line-height: 60px;\n  overflow: hidden;\n  transition: 0.3s height ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap {\n    height: 55px;\n}\n}\n#frame #sidepanel #profile .wrap img {\n  width: 140px;\n  border-radius: 50%;\n  padding: 3px;\n  border: 2px solid #e74c3c;\n  height: 200px;\n  float: left;\n  cursor: pointer;\n  transition: 0.3s border ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap img {\n    width: 40px;\n    margin-left: 4px;\n}\n}\n#frame #sidepanel #profile .wrap img.online {\n  border: 0px solid #2ecc71;\n}\n#frame #sidepanel #profile .wrap img.away {\n  border: 2px solid #f1c40f;\n}\n#frame #sidepanel #profile .wrap img.busy {\n  border: 2px solid #e74c3c;\n}\n#frame #sidepanel #profile .wrap img.offline {\n  border: 2px solid #95a5a6;\n}\n#frame #sidepanel #profile .wrap p {\n  float: left;\n  margin-left: 15px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap p {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap i.expand-button {\n  float: right;\n  margin-top: 23px;\n  font-size: 0.8em;\n  cursor: pointer;\n  color: #435f7a;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap i.expand-button {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap #status-options {\n  position: absolute;\n  opacity: 0;\n  visibility: hidden;\n  width: 150px;\n  margin: 70px 0 0 0;\n  border-radius: 6px;\n  z-index: 99;\n  line-height: initial;\n  background: #435f7a;\n  transition: 0.3s all ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options {\n    width: 58px;\n    margin-top: 57px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options.active {\n  opacity: 1;\n  visibility: visible;\n  margin: 75px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options.active {\n    margin-top: 62px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options:before {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-left: 6px solid transparent;\n  border-right: 6px solid transparent;\n  border-bottom: 8px solid #435f7a;\n  margin: -8px 0 0 24px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options:before {\n    margin-left: 23px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul {\n  overflow: hidden;\n  border-radius: 6px;\n}\n#frame #sidepanel #profile .wrap #status-options ul li {\n  padding: 15px 0 30px 18px;\n  display: block;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li {\n    padding: 15px 0 35px 22px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li:hover {\n  background: #496886;\n}\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  margin: 5px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {\n    width: 14px;\n    height: 14px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {\n  content: '';\n  position: absolute;\n  width: 14px;\n  height: 14px;\n  margin: -3px 0 0 -3px;\n  background: transparent;\n  border-radius: 50%;\n  z-index: 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {\n    height: 18px;\n    width: 18px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li p {\n  padding-left: 12px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li p {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-online span.status-circle {\n  background: #2ecc71;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-online.active span.status-circle:before {\n  border: 1px solid #2ecc71;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-away span.status-circle {\n  background: #f1c40f;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-away.active span.status-circle:before {\n  border: 1px solid #f1c40f;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-busy span.status-circle {\n  background: #e74c3c;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-busy.active span.status-circle:before {\n  border: 1px solid #e74c3c;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-offline span.status-circle {\n  background: #95a5a6;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-offline.active span.status-circle:before {\n  border: 1px solid #95a5a6;\n}\n#frame #sidepanel #profile .wrap #expanded {\n  padding: 100px 0 0 0;\n  display: block;\n  line-height: initial !important;\n}\n#frame #sidepanel #profile .wrap #expanded label {\n  float: left;\n  clear: both;\n  margin: 0 8px 5px 0;\n  padding: 5px 0;\n}\n#frame #sidepanel #profile .wrap #expanded input {\n  border: none;\n  margin-bottom: 6px;\n  background: #32465a;\n  border-radius: 3px;\n  color: #f5f5f5;\n  padding: 7px;\n  width: calc(100% - 43px);\n}\n#frame #sidepanel #profile .wrap #expanded input:focus {\n  outline: none;\n  background: #435f7a;\n}\n#frame #sidepanel #search {\n  border-top: 1px solid #32465a;\n  border-bottom: 1px solid #32465a;\n  font-weight: 300;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #search {\n    display: none;\n}\n}\n#frame #sidepanel #search label {\n  position: absolute;\n  margin: 10px 0 0 20px;\n}\n#frame #sidepanel #search input {\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n  padding: 10px 0 10px 46px;\n  width: calc(100% - 25px);\n  border: none;\n  background: #32465a;\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:focus {\n  outline: none;\n  background: #435f7a;\n}\n#frame #sidepanel #search input::-webkit-input-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input::-moz-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:-ms-input-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:-moz-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #contacts {\n  height: calc(100% - 177px);\n  overflow-y: scroll;\n  overflow-x: hidden;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts {\n    height: calc(100% - 149px);\n    overflow-y: scroll;\n    overflow-x: hidden;\n}\n#frame #sidepanel #contacts::-webkit-scrollbar {\n    display: none;\n}\n}\n#frame #sidepanel #contacts.expanded {\n  height: calc(100% - 334px);\n}\n#frame #sidepanel #contacts::-webkit-scrollbar {\n  width: 8px;\n  background: #2c3e50;\n}\n#frame #sidepanel #contacts::-webkit-scrollbar-thumb {\n  background-color: #243140;\n}\n#frame #sidepanel #contacts ul li.contact {\n  position: relative;\n  padding: 10px 0 15px 0;\n  font-size: 0.9em;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact {\n    padding: 6px 0 46px 8px;\n}\n}\n#frame #sidepanel #contacts ul li.contact:hover {\n  background: #32465a;\n}\n#frame #sidepanel #contacts ul li.contact.active {\n  background: #32465a;\n  border-right: 5px solid #435f7a;\n}\n#frame #sidepanel #contacts ul li.contact.active span.contact-status {\n  border: 2px solid #32465a !important;\n}\n#frame #sidepanel #contacts ul li.contact .wrap {\n  width: 88%;\n  margin: 0 auto;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap {\n    width: 100%;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap span {\n  position: absolute;\n  left: 0;\n  margin: -2px 0 0 -2px;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border: 2px solid #2c3e50;\n  background: #95a5a6;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.online {\n  background: #2ecc71;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.away {\n  background: #f1c40f;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.busy {\n  background: #e74c3c;\n}\n#frame #sidepanel #contacts ul li.contact .wrap img {\n  width: 40px;\n  border-radius: 50%;\n  float: left;\n  margin-right: 10px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap img {\n    margin-right: 0px;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta {\n  padding: 5px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap .meta {\n    display: none;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .name {\n  font-weight: 600;\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .preview {\n  margin: 5px 0 0 0;\n  padding: 0 0 1px;\n  font-weight: 400;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: 1s all ease;\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .preview span {\n  position: initial;\n  border-radius: initial;\n  background: none;\n  border: none;\n  padding: 0 2px 0 0;\n  margin: 0 0 0 1px;\n  opacity: .5;\n}\n#frame #sidepanel #bottom-bar {\n  position: absolute;\n  width: 100%;\n  bottom: 0;\n}\n#frame #sidepanel #bottom-bar button {\n  float: left;\n  border: none;\n  width: 100%;\n  padding: 10px 0;\n  background: #32465a;\n  color: #f5f5f5;\n  cursor: pointer;\n  font-size: 0.85em;\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button {\n    float: none;\n    width: 100%;\n    padding: 15px 0;\n}\n}\n#frame #sidepanel #bottom-bar button:focus {\n  outline: none;\n}\n#frame #sidepanel #bottom-bar button:nth-child(1) {\n  border-right: 1px solid #2c3e50;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button:nth-child(1) {\n    border-right: none;\n    border-bottom: 1px solid #2c3e50;\n}\n}\n#frame #sidepanel #bottom-bar button:hover {\n  background: #435f7a;\n}\n#frame #sidepanel #bottom-bar button i {\n  margin-right: 3px;\n  font-size: 1em;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button i {\n    font-size: 1.3em;\n}\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button span {\n    display: none;\n}\n}\n#frame .content {\n  float: right;\n  width: 60%;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame .content {\n    width: calc(100% - 58px);\n    min-width: 300px !important;\n}\n}\n@media screen and (min-width: 900px) {\n#frame .content {\n    width: calc(100% - 264px);\n}\n}\n#frame .content .contact-profile {\n  width: 100%;\n  height: 60px;\n  line-height: 60px;\n  background: #f5f5f5;\n}\n#frame .content .contact-profile img {\n  width: 55px;\n  border-radius: 50%;\n  float: left;\n  margin: 9px 12px 0 9px;\n}\n#frame .content .contact-profile p {\n  float: left;\n}\n#frame .content .contact-profile .social-media {\n  float: right;\n}\n#frame .content .contact-profile .social-media i {\n  margin-left: 14px;\n  cursor: pointer;\n}\n#frame .content .contact-profile .social-media i:nth-last-child(1) {\n  margin-right: 20px;\n}\n#frame .content .contact-profile .social-media i:hover {\n  color: #435f7a;\n}\n#frame .content .messages {\n  height: auto;\n  min-height: calc(100% - 93px);\n  max-height: calc(100% - 93px);\n  overflow-y: scroll;\n  overflow-x: hidden;\n  position: absolute;\n  width: 400px;\n}\n@media screen and (max-width: 735px) {\n#frame .content .messages {\n    max-height: calc(100% - 105px);\n}\n}\n#frame .content .messages::-webkit-scrollbar {\n  width: 8px;\n  background: transparent;\n}\n#frame .content .messages::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.3);\n}\n#frame .content .messages ul li {\n  display: inline-block;\n  clear: both;\n  float: left;\n  margin: 15px 15px 5px 15px;\n  width: calc(100% - 25px);\n  font-size: 0.9em;\n}\n#frame .content .messages ul li:nth-last-child(1) {\n  margin-bottom: 20px;\n}\n#frame .content .messages ul li.sent img {\n  margin: 6px 8px 0 0;\n}\n#frame .content .messages ul li.sent p {\n  background: #435f7a;\n  color: #f5f5f5;\n}\n#frame .content .messages ul li.replies img {\n  float: right;\n  margin: 6px 0 0 8px;\n}\n#frame .content .messages ul li.replies p {\n  background: #f5f5f5;\n  float: right;\n  color: #000 !important;\n}\n#frame .content .messages ul li img {\n  width: 28px;\n  border-radius: 50%;\n  float: left;\n}\n#frame .content .messages ul li p {\n  display: inline-block;\n  padding: 10px 15px;\n  border-radius: 20px;\n  max-width: 205px;\n  line-height: 130%;\n}\n@media screen and (min-width: 735px) {\n#frame .content .messages ul li p {\n    max-width: 300px;\n}\n}\n#frame .content .message-input {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  z-index: 99;\n}\n#frame .content .message-input .wrap {\n  position: relative;\n}\n#frame .content .message-input .wrap input {\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n  float: left;\n  border: none;\n  width: calc(100% - 90px);\n  padding: 11px 32px 10px 8px;\n  font-size: 0.8em;\n  color: #32465a;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap input {\n    padding: 15px 32px 16px 8px;\n}\n}\n#frame .content .message-input .wrap input:focus {\n  outline: none;\n}\n#frame .content .message-input .wrap .attachment {\n  position: absolute;\n  right: 60px;\n  z-index: 4;\n  margin-top: 10px;\n  font-size: 1.1em;\n  color: #435f7a;\n  opacity: .5;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap .attachment {\n    margin-top: 17px;\n    right: 65px;\n}\n}\n#frame .content .message-input .wrap .attachment:hover {\n  opacity: 1;\n}\n#frame .content .message-input .wrap button {\n  float: right;\n  border: none;\n  width: 50px;\n  padding: 12px 0;\n  cursor: pointer;\n  background: #32465a;\n  color: #f5f5f5;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap button {\n    padding: 16px 0;\n}\n}\n#frame .content .message-input .wrap button:hover {\n  background: #435f7a;\n}\n#frame .content .message-input .wrap button:focus {\n  outline: none;\n}\n.main{\nfont-family: 'Roboto Slab', serif;\n}\n.userimg{\nbackground-color:#2ecc71;\nborder: 2px solid;\nborder-radius:100%;\nheight:28px;\nwidth:28px;\nmargin: 6px 8px 0 0;\ndisplay:inline-block;\nborder-color:transparent;\n}\n", ""]);
 
 /***/ }),
 /* 38 */
@@ -33359,24 +33978,30 @@ module.exports = Component.exports
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
-    staticClass: "arrow"
-  }), _vm._v(" "), _c('ul', {
-    staticClass: "ChatLog"
-  }, _vm._l((_vm.messages), function(message) {
+    staticClass: "messages"
+  }, [_c('ul', [_vm._l((_vm.messages), function(message) {
     return _c('li', {
-      staticClass: "ChatLog__entry",
-      class: {
-        'ChatLog__entry_mine': message.isMine
-      }
+      class: ['message.isMine' ? 'replies' : 'sent']
     }, [_c('img', {
-      staticClass: "ChatLog__avatar",
       attrs: {
         "src": "/logo.png"
       }
     }), _vm._v(" "), _c('p', {
       staticClass: "ChatLog__message"
     }, [_vm._v(_vm._s(message.text))])])
-  })), _vm._v(" "), _c('input', {
+  }), _vm._v(" "), _vm._l((_vm.messages), function(message) {
+    return _c('li', {
+      class: ['message.isMine' ? 'replies' : 'sent']
+    }, [(message.attachment.url != null) ? _c('img', {
+      attrs: {
+        "src": "/logo.png"
+      }
+    }) : _vm._e(), _vm._v(" "), (message.attachment.url != null) ? _c('p', [_vm._v(_vm._s(message.attachment.url))]) : _vm._e()])
+  })], 2)]), _vm._v(" "), _c('div', {
+    staticClass: "message-input"
+  }, [_c('div', {
+    staticClass: "wrap"
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -33386,7 +34011,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "ChatInput",
     attrs: {
       "type": "text",
-      "placeholder": ""
+      "placeholder": "Write your message..."
     },
     domProps: {
       "value": (_vm.newMessage)
@@ -33401,8 +34026,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.newMessage = $event.target.value
       }
     }
+  }), _vm._v(" "), _c('i', {
+    staticClass: "fa fa-paperclip attachment",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }), _vm._v(" "), _vm._m(0)])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('button', {
+    staticClass: "submit"
+  }, [_c('i', {
+    staticClass: "fa fa-paper-plane",
+    attrs: {
+      "aria-hidden": "true"
+    }
   })])
-},staticRenderFns: []}
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -44444,6 +45083,946 @@ module.exports = function(module) {
 __webpack_require__(13);
 module.exports = __webpack_require__(14);
 
+
+/***/ }),
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var axios = __webpack_require__(2);
+var API_ENDPOINT = '/botman';
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            messages: [],
+            newMessage: null
+        };
+    },
+
+
+    methods: {
+        _addMessage: function _addMessage(text, attachment, isMine) {
+            this.messages.push({
+                'isMine': isMine,
+                'user': isMine ? '👨' : '🤖',
+                'text': text,
+                'attachment': attachment || {}
+            });
+        },
+        sendMessage: function sendMessage() {
+            var _this = this;
+
+            var messageText = this.newMessage;
+            this.newMessage = '';
+            if (messageText === 'clear') {
+                this.messages = [];
+                return;
+            }
+
+            this._addMessage(messageText, null, true);
+
+            axios.post(API_ENDPOINT, {
+                driver: 'web',
+                userId: 1245678,
+                message: messageText
+            }).then(function (response) {
+                var messages = response.data.messages || [];
+                messages.forEach(function (msg) {
+                    _this._addMessage(msg.text, msg.attachment, false);
+                });
+            }, function (response) {});
+        }
+    }
+});
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(9)();
+exports.push([module.i, "\nbody {\n\n   overflow:auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  min-height: 100vh;\n  background: #27ae60;\n  font-family: \"proxima-nova\", \"Source Sans Pro\", sans-serif;\n  font-size: 1em;\n  letter-spacing: 0.1px;\n  color: #32465a;\n  text-rendering: optimizeLegibility;\n  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);\n  -webkit-font-smoothing: antialiased;\n}\n#frame {\n  width: 95%;\n  min-width: 660px;\n  max-width: 1000px;\n  height: 92vh;\n  min-height: 300px;\n  max-height: 720px;\n  background: #E6EAEA;\n}\n@media screen and (max-width: 360px) {\n#frame {\n    width: 100%;\n    height: 100vh;\n}\n}\n#frame #sidepanel {\n  float: left;\n  min-width: 200px;\n  max-width: 340px;\n  width: 40%;\n  height: 100%;\n  background: #e9ecef;\n  color: #f5f5f5;\n  overflow: hidden;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel {\n    width: 58px;\n    min-width: 58px;\n}\n}\n#frame #sidepanel #profile {\n  width: 72%;\n  margin: 30px auto;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile {\n    width: 100%;\n    margin: 0 auto;\n    padding: 5px 0 0 0;\n    background: #32465a;\n}\n}\n#frame #sidepanel #profile.expanded .wrap {\n  height: 210px;\n  line-height: initial;\n}\n#frame #sidepanel #profile.expanded .wrap p {\n  margin-top: 20px;\n}\n#frame #sidepanel #profile.expanded .wrap i.expand-button {\n  -webkit-transform: scaleY(-1);\n  transform: scaleY(-1);\n  -webkit-filter: FlipH;\n          filter: FlipH;\n  -ms-filter: \"FlipH\";\n}\n#frame #sidepanel #profile .wrap {\n  height: 270px;\n  line-height: 60px;\n  overflow: hidden;\n  transition: 0.3s height ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap {\n    height: 55px;\n}\n}\n#frame #sidepanel #profile .wrap img {\n  width: 140px;\n  border-radius: 50%;\n  padding: 3px;\n  border: 2px solid #e74c3c;\n  height: 200px;\n  float: left;\n  cursor: pointer;\n  transition: 0.3s border ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap img {\n    width: 40px;\n    margin-left: 4px;\n}\n}\n#frame #sidepanel #profile .wrap img.online {\n  border: 0px solid #2ecc71;\n}\n#frame #sidepanel #profile .wrap img.away {\n  border: 2px solid #f1c40f;\n}\n#frame #sidepanel #profile .wrap img.busy {\n  border: 2px solid #e74c3c;\n}\n#frame #sidepanel #profile .wrap img.offline {\n  border: 2px solid #95a5a6;\n}\n#frame #sidepanel #profile .wrap p {\n  float: left;\n  margin-left: 15px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap p {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap i.expand-button {\n  float: right;\n  margin-top: 23px;\n  font-size: 0.8em;\n  cursor: pointer;\n  color: #435f7a;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap i.expand-button {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap #status-options {\n  position: absolute;\n  opacity: 0;\n  visibility: hidden;\n  width: 150px;\n  margin: 70px 0 0 0;\n  border-radius: 6px;\n  z-index: 99;\n  line-height: initial;\n  background: #435f7a;\n  transition: 0.3s all ease;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options {\n    width: 58px;\n    margin-top: 57px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options.active {\n  opacity: 1;\n  visibility: visible;\n  margin: 75px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options.active {\n    margin-top: 62px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options:before {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-left: 6px solid transparent;\n  border-right: 6px solid transparent;\n  border-bottom: 8px solid #435f7a;\n  margin: -8px 0 0 24px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options:before {\n    margin-left: 23px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul {\n  overflow: hidden;\n  border-radius: 6px;\n}\n#frame #sidepanel #profile .wrap #status-options ul li {\n  padding: 15px 0 30px 18px;\n  display: block;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li {\n    padding: 15px 0 35px 22px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li:hover {\n  background: #496886;\n}\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  margin: 5px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {\n    width: 14px;\n    height: 14px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {\n  content: '';\n  position: absolute;\n  width: 14px;\n  height: 14px;\n  margin: -3px 0 0 -3px;\n  background: transparent;\n  border-radius: 50%;\n  z-index: 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {\n    height: 18px;\n    width: 18px;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li p {\n  padding-left: 12px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #profile .wrap #status-options ul li p {\n    display: none;\n}\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-online span.status-circle {\n  background: #2ecc71;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-online.active span.status-circle:before {\n  border: 1px solid #2ecc71;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-away span.status-circle {\n  background: #f1c40f;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-away.active span.status-circle:before {\n  border: 1px solid #f1c40f;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-busy span.status-circle {\n  background: #e74c3c;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-busy.active span.status-circle:before {\n  border: 1px solid #e74c3c;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-offline span.status-circle {\n  background: #95a5a6;\n}\n#frame #sidepanel #profile .wrap #status-options ul li#status-offline.active span.status-circle:before {\n  border: 1px solid #95a5a6;\n}\n#frame #sidepanel #profile .wrap #expanded {\n  padding: 100px 0 0 0;\n  display: block;\n  line-height: initial !important;\n}\n#frame #sidepanel #profile .wrap #expanded label {\n  float: left;\n  clear: both;\n  margin: 0 8px 5px 0;\n  padding: 5px 0;\n}\n#frame #sidepanel #profile .wrap #expanded input {\n  border: none;\n  margin-bottom: 6px;\n  background: #32465a;\n  border-radius: 3px;\n  color: #f5f5f5;\n  padding: 7px;\n  width: calc(100% - 43px);\n}\n#frame #sidepanel #profile .wrap #expanded input:focus {\n  outline: none;\n  background: #435f7a;\n}\n#frame #sidepanel #search {\n  border-top: 1px solid #32465a;\n  border-bottom: 1px solid #32465a;\n  font-weight: 300;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #search {\n    display: none;\n}\n}\n#frame #sidepanel #search label {\n  position: absolute;\n  margin: 10px 0 0 20px;\n}\n#frame #sidepanel #search input {\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n  padding: 10px 0 10px 46px;\n  width: calc(100% - 25px);\n  border: none;\n  background: #32465a;\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:focus {\n  outline: none;\n  background: #435f7a;\n}\n#frame #sidepanel #search input::-webkit-input-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input::-moz-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:-ms-input-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #search input:-moz-placeholder {\n  color: #f5f5f5;\n}\n#frame #sidepanel #contacts {\n  height: calc(100% - 177px);\n  overflow-y: scroll;\n  overflow-x: hidden;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts {\n    height: calc(100% - 149px);\n    overflow-y: scroll;\n    overflow-x: hidden;\n}\n#frame #sidepanel #contacts::-webkit-scrollbar {\n    display: none;\n}\n}\n#frame #sidepanel #contacts.expanded {\n  height: calc(100% - 334px);\n}\n#frame #sidepanel #contacts::-webkit-scrollbar {\n  width: 8px;\n  background: #2c3e50;\n}\n#frame #sidepanel #contacts::-webkit-scrollbar-thumb {\n  background-color: #243140;\n}\n#frame #sidepanel #contacts ul li.contact {\n  position: relative;\n  padding: 10px 0 15px 0;\n  font-size: 0.9em;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact {\n    padding: 6px 0 46px 8px;\n}\n}\n#frame #sidepanel #contacts ul li.contact:hover {\n  background: #32465a;\n}\n#frame #sidepanel #contacts ul li.contact.active {\n  background: #32465a;\n  border-right: 5px solid #435f7a;\n}\n#frame #sidepanel #contacts ul li.contact.active span.contact-status {\n  border: 2px solid #32465a !important;\n}\n#frame #sidepanel #contacts ul li.contact .wrap {\n  width: 88%;\n  margin: 0 auto;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap {\n    width: 100%;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap span {\n  position: absolute;\n  left: 0;\n  margin: -2px 0 0 -2px;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border: 2px solid #2c3e50;\n  background: #95a5a6;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.online {\n  background: #2ecc71;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.away {\n  background: #f1c40f;\n}\n#frame #sidepanel #contacts ul li.contact .wrap span.busy {\n  background: #e74c3c;\n}\n#frame #sidepanel #contacts ul li.contact .wrap img {\n  width: 40px;\n  border-radius: 50%;\n  float: left;\n  margin-right: 10px;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap img {\n    margin-right: 0px;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta {\n  padding: 5px 0 0 0;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #contacts ul li.contact .wrap .meta {\n    display: none;\n}\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .name {\n  font-weight: 600;\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .preview {\n  margin: 5px 0 0 0;\n  padding: 0 0 1px;\n  font-weight: 400;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: 1s all ease;\n}\n#frame #sidepanel #contacts ul li.contact .wrap .meta .preview span {\n  position: initial;\n  border-radius: initial;\n  background: none;\n  border: none;\n  padding: 0 2px 0 0;\n  margin: 0 0 0 1px;\n  opacity: .5;\n}\n#frame #sidepanel #bottom-bar {\n  position: absolute;\n  width: 100%;\n  bottom: 0;\n}\n#frame #sidepanel #bottom-bar button {\n  float: left;\n  border: none;\n  width: 100%;\n  padding: 10px 0;\n  background: #32465a;\n  color: #f5f5f5;\n  cursor: pointer;\n  font-size: 0.85em;\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button {\n    float: none;\n    width: 100%;\n    padding: 15px 0;\n}\n}\n#frame #sidepanel #bottom-bar button:focus {\n  outline: none;\n}\n#frame #sidepanel #bottom-bar button:nth-child(1) {\n  border-right: 1px solid #2c3e50;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button:nth-child(1) {\n    border-right: none;\n    border-bottom: 1px solid #2c3e50;\n}\n}\n#frame #sidepanel #bottom-bar button:hover {\n  background: #435f7a;\n}\n#frame #sidepanel #bottom-bar button i {\n  margin-right: 3px;\n  font-size: 1em;\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button i {\n    font-size: 1.3em;\n}\n}\n@media screen and (max-width: 735px) {\n#frame #sidepanel #bottom-bar button span {\n    display: none;\n}\n}\n#frame .content {\n  float: right;\n  width: 60%;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n}\n@media screen and (max-width: 735px) {\n#frame .content {\n    width: calc(100% - 58px);\n    min-width: 300px !important;\n}\n}\n@media screen and (min-width: 900px) {\n#frame .content {\n    width: calc(100% - 264px);\n}\n}\n#frame .content .contact-profile {\n  width: 100%;\n  height: 60px;\n  line-height: 60px;\n  background: #f5f5f5;\n}\n#frame .content .contact-profile img {\n  width: 55px;\n  border-radius: 50%;\n  float: left;\n  margin: 9px 12px 0 9px;\n}\n#frame .content .contact-profile p {\n  float: left;\n}\n#frame .content .contact-profile .social-media {\n  float: right;\n}\n#frame .content .contact-profile .social-media i {\n  margin-left: 14px;\n  cursor: pointer;\n}\n#frame .content .contact-profile .social-media i:nth-last-child(1) {\n  margin-right: 20px;\n}\n#frame .content .contact-profile .social-media i:hover {\n  color: #435f7a;\n}\n#frame .content .messages {\n  height: auto;\n  min-height: calc(100% - 93px);\n  max-height: calc(100% - 93px);\n  overflow-y: scroll;\n  overflow-x: hidden;\n  position: absolute;\n  width: 400px;\n}\n@media screen and (max-width: 735px) {\n#frame .content .messages {\n    max-height: calc(100% - 105px);\n}\n}\n#frame .content .messages::-webkit-scrollbar {\n  width: 8px;\n  background: transparent;\n}\n#frame .content .messages::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.3);\n}\n#frame .content .messages ul li {\n  display: inline-block;\n  clear: both;\n  float: left;\n  margin: 15px 15px 5px 15px;\n  width: calc(100% - 25px);\n  font-size: 0.9em;\n}\n#frame .content .messages ul li:nth-last-child(1) {\n  margin-bottom: 20px;\n}\n#frame .content .messages ul li.sent img {\n  margin: 6px 8px 0 0;\n}\n#frame .content .messages ul li.sent p {\n  background: #435f7a;\n  color: #f5f5f5;\n}\n#frame .content .messages ul li.replies img {\n  float: right;\n  margin: 6px 0 0 8px;\n}\n#frame .content .messages ul li.replies p {\n  background: #f5f5f5;\n  float: right;\n  color: #000 !important;\n}\n#frame .content .messages ul li img {\n  width: 28px;\n  border-radius: 50%;\n  float: left;\n}\n#frame .content .messages ul li p {\n  display: inline-block;\n  padding: 10px 15px;\n  border-radius: 20px;\n  max-width: 205px;\n  line-height: 130%;\n}\n@media screen and (min-width: 735px) {\n#frame .content .messages ul li p {\n    max-width: 300px;\n}\n}\n#frame .content .message-input {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  z-index: 99;\n}\n#frame .content .message-input .wrap {\n  position: relative;\n}\n#frame .content .message-input .wrap input {\n  font-family: \"proxima-nova\",  \"Source Sans Pro\", sans-serif;\n  float: left;\n  border: none;\n  width: calc(100% - 90px);\n  padding: 11px 32px 10px 8px;\n  font-size: 0.8em;\n  color: #32465a;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap input {\n    padding: 15px 32px 16px 8px;\n}\n}\n#frame .content .message-input .wrap input:focus {\n  outline: none;\n}\n#frame .content .message-input .wrap .attachment {\n  position: absolute;\n  right: 60px;\n  z-index: 4;\n  margin-top: 10px;\n  font-size: 1.1em;\n  color: #435f7a;\n  opacity: .5;\n  cursor: pointer;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap .attachment {\n    margin-top: 17px;\n    right: 65px;\n}\n}\n#frame .content .message-input .wrap .attachment:hover {\n  opacity: 1;\n}\n#frame .content .message-input .wrap button {\n  float: right;\n  border: none;\n  width: 50px;\n  padding: 12px 0;\n  cursor: pointer;\n  background: #32465a;\n  color: #f5f5f5;\n}\n@media screen and (max-width: 735px) {\n#frame .content .message-input .wrap button {\n    padding: 16px 0;\n}\n}\n#frame .content .message-input .wrap button:hover {\n  background: #435f7a;\n}\n#frame .content .message-input .wrap button:focus {\n  outline: none;\n}\n.main{\nfont-family: 'Roboto Slab', serif;\n}\n.userimg{\nbackground-color:#2ecc71;\nborder: 2px solid;\nborder-radius:100%;\nheight:28px;\nwidth:28px;\nmargin: 6px 8px 0 0;\ndisplay:inline-block;\nborder-color:transparent;\n}\n", ""]);
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(63)
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(59),
+  /* template */
+  __webpack_require__(62),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/akshayharyani/Projects/Calvn/resources/assets/js/components/Feedback.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Feedback.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-423695da", Component.options)
+  } else {
+    hotAPI.reload("data-v-423695da", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "messages"
+  }, [_c('ul', [_vm._m(0), _vm._v(" "), _vm._l((_vm.messages), function(message) {
+    return _c('li', {
+      class: ['message.isMine' ? 'replies' : 'sent']
+    }, [_c('img', {
+      attrs: {
+        "src": "/logo.png"
+      }
+    }), _vm._v(" "), _c('p', {
+      staticClass: "ChatLog__message"
+    }, [_vm._v(_vm._s(message.text))])])
+  }), _vm._v(" "), _vm._l((_vm.messages), function(message) {
+    return _c('li', {
+      class: ['message.isMine' ? 'replies' : 'sent']
+    }, [(message.attachment.url != null) ? _c('img', {
+      attrs: {
+        "src": "/logo.png"
+      }
+    }) : _vm._e(), _vm._v(" "), (message.attachment.url != null) ? _c('p', [_vm._v(_vm._s(message.attachment.url))]) : _vm._e()])
+  })], 2)]), _vm._v(" "), _c('div', {
+    staticClass: "message-input"
+  }, [_c('div', {
+    staticClass: "wrap"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.newMessage),
+      expression: "newMessage"
+    }],
+    staticClass: "ChatInput",
+    attrs: {
+      "type": "text",
+      "placeholder": "Write your message..."
+    },
+    domProps: {
+      "value": (_vm.newMessage)
+    },
+    on: {
+      "keyup": function($event) {
+        if (!('button' in $event) && _vm._k($event.keyCode, "enter", 13, $event.key)) { return null; }
+        _vm.sendMessage($event)
+      },
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.newMessage = $event.target.value
+      }
+    }
+  }), _vm._v(" "), _c('i', {
+    staticClass: "fa fa-paperclip attachment",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }), _vm._v(" "), _vm._m(1)])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('li', {
+    staticClass: "sent"
+  }, [_c('img', {
+    attrs: {
+      "src": "http://emilcarlsson.se/assets/mikeross.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('p', [_vm._v("Hi")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('button', {
+    staticClass: "submit"
+  }, [_c('i', {
+    staticClass: "fa fa-paper-plane",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-423695da", module.exports)
+  }
+}
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(60);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(12)("260ad75b", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-423695da\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Feedback.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-423695da\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Feedback.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);
